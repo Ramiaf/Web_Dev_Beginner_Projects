@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#score {
+    position: relative;
+    top: 40px;
+}
+
+#time {
+    position: relative;
+    top: 50px;
+}
+
+#game {
+    position: relative;
+    top: 75px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 1px solid black;
+    height: 440px;
+    width: 50%;
+}
+
+.square {
+    border: 1px solid black;
+    background-image: none;
+    cursor: pointer;
+}
+
+h4 {
+    position: relative;
+    top: 10px;
+}
