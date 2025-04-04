@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hangman</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="container">
+            <h1>Hangman</h1>
+            <div id="game_status">
+                <div id="score">Mistakes: <span id="mistakes">0</span>/6</div>
+                <img src="images/0.jpg">
+            </div>
+            <div id="prompt">
+                <div>Guess the word: </div><span id="hidden_word"></span>
+            </div>
+            <div class="letters" id="row1-letters"></div>
+            <div class="letters" id = "row2-letters"></div>
+            <div class="letters" id = "row3-letters"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>

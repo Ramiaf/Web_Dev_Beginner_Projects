@@ -1,0 +1,40 @@
+* {
+    padding:0;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    position:relative;
+    bottom: 22px;
+    right: 20px;
+    height: 310px;
+}
+
+#hidden_word {
+    position: relative;
+    bottom:5px;
+    font-size: 40px;
+}
+
+#game_status {
+    display: flex;
+    position: relative;
+}
+
+#score {
+    position: relative;
+    left: 100%;
+}
+
+#prompt {
+    text-align: center;
+    position: relative;
+    bottom: 10px;    
+}
