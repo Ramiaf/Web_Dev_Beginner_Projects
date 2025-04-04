@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.imageDisplay {
+    max-width: 100%;
+    height: 100%;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    width: 515px;
+    height: 450px;
+    margin-top: 15px;
+}
+
+.square {
+    background-color: indigo;
+    cursor: pointer;
+    border: 1px solid black;
+    width: 125px;
+}
