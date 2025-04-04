@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: lightgrey;
+    color: teal;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 400px;
+    width: 400px;
+    position: relative;
+    top: 25px;
+}
+.square {
+    text-align: center;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#top-left, #top-center, #middle-left, #middle-center {
+    border-right: 5px solid teal;
+    border-bottom: 5px solid teal;
+}
+
+#top-right {
+    border-bottom: 5px solid teal;
+}
+
+#middle-right {
+    border-bottom: 5px solid teal;
+}
+
+#bottom-left, #bottom-center {
+    border-right: 5px solid teal;
+}
+
+#message {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 70px;
+    bottom: 0px;
+    top: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+#score {
+/* we need to specify the flexbox once more to be able to separate between p1 and p2 */
+    font-weight: bold;
+    font-size: 25px;    
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 800px;
+    top: 50px;
+    bottom: 10px;
+}
+
+#p1 {
+    position: relative;
+    /* left: 250px; */
+}
+
+#p2 {
+    position: relative;
+    /* right: 250px; */
+}
+#p1_score {
+    color: rgb(115, 50, 220);
+}
+
+#p2_score {
+    color: rgb(240, 50, 90);
+}
+
+#line-diagonal-left, #line-diagonal-right, #line-row1, #line-row2, #line-row3, #line-col1, #line-col2, #line-col3 {
+    position: absolute;
+    height: 8px;
+    width: 0px;
+    transform-origin: left;
+}
+
+
+.animate {
+    animation: draw .5s linear forwards;
+}
+
+.animate-diag {
+    animation: draw_diag .5s linear forwards;
+}
+@keyframes draw {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes draw_diag {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 540px;
+    }
+}
